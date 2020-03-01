@@ -1,0 +1,5 @@
+# for both WebStorm and PHPStorm
+.idea/
+
+# for macOS
+.DS_STORE

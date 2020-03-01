@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>Alo's GitHub Pages</title>
+</head>
+<body>
+    <h1>Heylà!!!</h1>
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <!--<script src="/__/firebase/7.9.2/firebase-auth.js"></script>-->
+
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyAtSKKS6SgOIviR2RYLC5nNcl0J2WrDHE4",
+        authDomain: "lpapps005.firebaseapp.com",
+        databaseURL: "https://lpapps005.firebaseio.com",
+        projectId: "lpapps005",
+        storageBucket: "lpapps005.appspot.com",
+        messagingSenderId: "409965598844",
+        appId: "1:409965598844:web:e5a0bacfd220b5be3a51f9"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+        
+    // Roba mia
+    firebase.database().ref('/promotions/').then(function(snapshot) {
+            console.log(snapshot.val());
+        });
+    </script>
+    
+</body>
+</html>
